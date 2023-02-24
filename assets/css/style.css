@@ -36,22 +36,26 @@ html {
 
 header {
     width:100%; 
-    
+  
+}
+.container {
+    padding:15px 4%;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:15px 9%;
-    background: linear-gradient(to right, #a86116, #633300,#a86116);
+    padding:15px 13%;
+    background: #fff;
     position:fixed;
     top:0; left:0; right:0;
     z-index:1000;
+    box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 .menuBx {
     display:none;
 }
 .menuBx i {
-    color:#fff;
-    font-size:1.5rem;    
+    color:var(--brown-dark);
+    font-size:2.2rem;    
 }
 .navBar ul {
     display: flex;
@@ -60,7 +64,7 @@ header {
 
 }
 .navBar a {
-    color:#cd8900;
+    color:var(--brown-dark);
     font-size:1.8rem;
     font-weight:600;
 }
@@ -87,35 +91,30 @@ header {
 
 /* start style section home */
 section {
-    width:100%;
-    height:100vh;
-    padding:50px 9%;
+    width:100%;    
+    padding:50px 13%;
 }
 .home {    
     background-image:url('../images/projeto-casamento.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
+    min-height:100vh;
+    padding-top:16rem;
+    
 
 } 
 .content {
+    width:100vw;
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(500px, auto));
-    gap:9rem;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    width:100%;
-    height:100%;
-}
-.text-bx {
-    width:600px;
-    gap:0.5rem;
-    position:absolute;
-    left:0;
-    top:120px;
+    grid-template-columns: repeat(2, 1fr);    
+    justify-content: space-between;
+    align-items:center;   
     
+}
+.text-bx {    
+    width:600px;
+     
 }
 .text-bx h1 {
     font-size:5rem;
@@ -131,14 +130,14 @@ section {
     margin-bottom: 5.5rem;
     color:var(--brown-dark);
 }
-.img-bx {
-    position: absolute;
-    top:140px;
-    right:210px;
-    height:350px;
+.img-bx { 
+    flex:1;
+    padding-top:8rem; 
+    align-items: center;     
+    
 }
 .img-bx img {
-    height:100%;
+    height:350px;
     animation:float 4s linear infinite;
 }
 @keyframes float {
@@ -146,7 +145,7 @@ section {
         transform:translateY(0rem);
     }
     50% {
-        transform:translateY(-5rem);
+        transform:translateY(-7rem);
     }
 }
 .three-img {
@@ -154,8 +153,8 @@ section {
     width:150px;
     height:150px;
     position:absolute;
-    bottom: 0;
-    left:300px;
+    bottom: 20px;
+    left:380px;
     
 }
 .three-img img {
@@ -169,11 +168,177 @@ section {
     transform:translateY(-2rem);
 }
 
-
-
-
-
 /* end style section home */
 
     
 
+
+
+
+
+
+
+
+
+/* Início responsividade */
+@media(max-width:980px) {
+    html {
+        font-size: 45%;       
+    }
+    header {        
+        padding:6px;       
+    }
+    nav .container {
+        padding:10px;       
+    }
+    section {
+        width:100%;    
+        padding:50px 13%;
+    }
+    .home {    
+        background-image:url('../images/projeto-casamento.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height:100vh;
+        padding-top:16rem;
+        
+    
+    } 
+    .content {
+        width:100vw;
+        display: grid;
+        grid-template-columns: repeat(400px, 1fr);    
+        justify-content: center;
+        align-items:center;   
+        
+    }
+    .text-bx {    
+        width:400px;         
+    }
+    .three-img {
+        display: flex;
+        width:100px;
+        height:100px;
+        position:absolute;
+        bottom: 20px;
+        left:280px;
+        
+    }
+
+}
+
+@media(max-width:840px) {
+    .menuBx {
+        display: initial;
+    }    
+    
+    .navBar ul {
+        display:block;
+        position: absolute;
+        left:0;
+        top:99%;
+        padding:50px 90px;
+        background-color: var(--brown-medium);      
+        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+                               
+    }
+    .navBar ul.active {
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+         
+    }
+    .navBar li {
+        padding:10px 0;
+    }
+
+    .navBar a {
+        font-size: 4rem;
+        font-weight:500;     
+        border:none;
+        color:#ddaf75;
+        padding:0;
+                    
+    }
+    .navBar a:hover {       
+        color:var(--brown-dark) ;                    
+    } 
+    .content {
+        width:100vw;
+        display: grid;
+        grid-template-columns: repeat(350px, 1fr);    
+        justify-content: center;
+        align-items:center;        
+    }   
+    .text-bx {    
+        width:320px;         
+    }
+    .img-bx img {
+        height:280px;
+        animation:float 4s linear infinite;
+    }
+    /*
+    
+    }*/
+
+}
+@media(max-width:740px) {
+    .home {    
+         width:100vw;
+         min-height:100vh;
+         padding-top:16rem;         
+    }
+    .three-img {
+        display: flex;
+        width:100px;
+        height:100px;
+        position:absolute;
+        bottom: 20px;
+        left:240px;
+        
+    }
+
+}
+
+@media(max-width:650px) {
+    .content  {
+        width:100vw;
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-content:center;
+        align-items:center;              
+    } 
+    .three-img {
+        display: flex;
+        flex-direction: column;
+        width:90px;
+        height:90px;
+        position:absolute;
+        bottom: 90px;
+        left:320px;        
+    }
+    
+    .text-bx {    
+        width:500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        text-align: center;        
+    }
+    .container a .btn{
+        display: flex;
+        width:200px;
+    }
+    
+    .img-bx img {
+        height:280px;
+        animation:float 4s linear infinite;
+    }
+  
+
+}
+    
+
+
+
+/* Final responsividade */
