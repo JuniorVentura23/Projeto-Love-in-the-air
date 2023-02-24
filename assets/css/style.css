@@ -7,7 +7,7 @@
     transition: all linear 0.4s;
     list-style: none;
     text-decoration:none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;   
 
 }
 
@@ -26,13 +26,12 @@
     --font-sac: 'Sacramento', cursive;
 }
 html {
-    font-size:62.5%;
-    scroll-padding-top:7rem;
+    font-size:62.5%;    
     scroll-behavior:smooth;
-    scrollbar-color: var(--brown-dark);
+    
 }
 
-/* start style header */
+/* -------start style header------- */
 
 header {
     width:100%; 
@@ -52,6 +51,7 @@ header {
 }
 .menuBx {
     display:none;
+    cursor:pointer;
 }
 .menuBx i {
     color:var(--brown-dark);
@@ -90,13 +90,13 @@ header {
     color:var(--brown-light-fn);    
 }
 
-/* end style header */
+/* -------end style header------- */
 
 
-/* start style section home */
+/* -------start style section home------- */
 section {
     width:100%;    
-    padding:50px 13%;
+    padding:70px 13%;
 }
 .home {    
     background-image:url('../images/projeto-casamento.jpg');
@@ -104,16 +104,19 @@ section {
     background-size: cover;
     background-position: center;
     min-height:100vh;
-    padding-top:16rem;
+    padding-top:12rem;
     
 
 } 
 .content {
-    width:100vw;
+    width:100%;
+    height:auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);    
     justify-content: space-between;
-    align-items:center;   
+    align-items:center;
+    gap:6rem; 
+     
     
 }
 .text-bx {    
@@ -128,6 +131,14 @@ section {
     font-size:7.5rem;
     color:var(--brown-medium);
 }
+.box-btn  {
+    width:200px;
+    height:90px;
+}
+.box-btn .btn {
+    width:100%;
+    padding:10px 20px;
+}
 .text-bx h3 {
     font-size:2.6rem;
     font-weight:600;
@@ -135,8 +146,9 @@ section {
     color:var(--brown-dark);
 }
 .img-bx { 
-    flex:1;
-    padding-top:8rem; 
+    width:450px;
+    height:450px;    
+    padding-top:8rem;    
     align-items: center;     
     
 }
@@ -154,11 +166,11 @@ section {
 }
 .three-img {
     display: flex;
-    width:150px;
+    width:465px;
     height:150px;
     position:absolute;
-    bottom: 20px;
-    left:380px;
+    bottom: 30px;
+    left:380px;  
     
 }
 .three-img img {
@@ -172,9 +184,111 @@ section {
     transform:translateY(-2rem);
 }
 
-/* end style section home */
+/* -------end style section home------- */
 
+/* -------start style ambiente-------  */
+.ambientes {
+    /* background-color: ; */
+}
+.content-ambi  {
+    width:100%; 
+    display:flex;
+    justify-content: center;
+    flex-direction: column;  
+    text-align: center;    
+}
+.box-title {
+    width:100%;
+}
+.box-title h2 {
+    font-family: var(--font-sac);
+    font-size:7rem;
+    color:var(--brown-dark)
+}
+.box-title span {
+    font-size:3rem;
     
+}
+.box-img {
+    width:200px;
+    height:120px;
+}
+
+
+
+
+.box-img img {
+    width:100%;
+    height:100%;
+    border-radius:30px;
+    
+}
+.box-img img:hover {
+    transform: scale(1.4);
+}
+.box-all-cards {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, auto));
+    gap:3rem;
+    padding-top:60px
+}
+.unit-card {
+    width:250px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    padding:20px 20px 50px 20px;
+    border-radius:20px;
+    box-shadow: 4px 3px 6px 7px rgba(0,0,0,0.1);
+    position: relative;
+    cursor:pointer;
+}
+.unit-card:hover {
+    /* transform: scale(1.1); */
+    background:linear-gradient(to bottom, #FFC9C9, #6fb5ff); 
+}
+.box-text {
+    padding-top:20px;
+}
+.box-text h3 {
+    font-size:2rem;
+    color:var(--brown-dark);    
+}
+.box-text h5 {
+    font-size:1.6rem;
+    font-weight:600;
+    margin:7px 0;
+}
+.box-star {
+    width:160px;
+    height:auto;
+}
+.box-star i {
+    font-size:1.2rem;
+    color: #e9c704;
+    padding-top:20px;
+}
+.trass {
+    width:90px;
+    height:30px;
+    background-color: #834800;
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    font-size:1.5rem;
+    font-weight: 700; 
+    border-radius: 20px 20px 0 0;  
+}
+
+/* -------end style ambiente-------  */
 
 
 
