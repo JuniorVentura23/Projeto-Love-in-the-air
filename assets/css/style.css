@@ -363,7 +363,19 @@ section {
 
 
 /* end style serviços */
-       
+
+
+/* start style depoimentos */
+.depoimentos__content {
+    width:100%; 
+    display:flex;
+    justify-content: center;
+    flex-direction: column;  
+    text-align: center;
+}
+
+
+/* end style depoimentos */
 
 
 
