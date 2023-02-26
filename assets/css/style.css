@@ -291,6 +291,31 @@ section {
 /* -------end style ambiente-------  */
 
 
+/* start style serviços */
+.servicos {
+    background-color:#7d5c00 ; 
+}
+.servicos__content {
+    width:100%; 
+    display:flex;
+    justify-content: center;
+    flex-direction: column;  
+    text-align: center;    
+}
+.servicos__content span {
+    color:#fff;
+}
+.servicos__boxThreeSer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
+
+
+
+
+
+/* end style serviços */
+       
 
 
 
