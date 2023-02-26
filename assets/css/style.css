@@ -230,7 +230,7 @@ section {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(250px, auto));
     gap:3rem;
-    padding-top:60px
+    padding-top:60px;
 }
 .unit-card {
     width:250px;
@@ -294,6 +294,9 @@ section {
 /* start style serviços */
 .servicos {
     background-color:#7d5c00 ; 
+    clip-path:polygon(100% 0, 100% 100%, 0% 90%, 0 15%);
+    padding:180px 13%;
+    border:3px dotted #fff;
 }
 .servicos__content {
     width:100%; 
@@ -308,10 +311,55 @@ section {
 .servicos__boxThreeSer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    padding-top:70px;
+    padding-bottom:120px;
 }
-
-
-
+.servicos__boxUnit {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+.servicos__boxUnit h5 {
+    font-size: 2.3rem;
+    color:#fff;
+    font-weight:500;
+}
+.servicos__boxIcons {
+    width:180px;
+    height:180px;
+    background-color: #fff;
+    border-radius:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border:none;
+    margin-bottom:30px;
+    cursor: pointer;
+}
+.servicos__boxIcons:hover {
+    background-color:var(--brown-dark);
+    transform:translateY(-7px);
+}
+.servicos__borderIcons {
+    width:165px;
+    height:165px;
+    border-radius:100px;
+    border:5px solid #7d5c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.servicos__borderIcons i {
+    font-size: 6rem;
+    color:#7d5c00;
+}
+.servicos__boxDescrSalon p {
+    font-size:2.2rem;
+    color:#fff;
+    font-weight: 700;
+}
 
 
 /* end style serviços */
