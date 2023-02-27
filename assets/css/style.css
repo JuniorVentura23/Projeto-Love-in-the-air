@@ -31,6 +31,7 @@ html {
     
 }
 
+
 /* -------start style header------- */
 
 header {
@@ -401,6 +402,7 @@ section {
     font-size: 1.8rem;
     text-align:left;
     margin-bottom:60px;
+    color:var(--brown-dark);
 }
 .depoimentos__consultor {
     margin-top:70px;
@@ -409,6 +411,94 @@ section {
 /* end style depoimentos */
 
 
+/* start style intituição */
+.instituicao {           
+    position: relative;
+    width:100%;
+    min-width:100vw;
+    height:600px;
+    
+}
+.instituicao__boxVideo {
+    position: absolute;
+    width:100%;
+    height:100%;
+    right:30px;
+    
+}
+.instituicao__boxVideo video {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    
+
+}
+.instituicao__content {
+    width:100%; 
+    display:flex;
+    justify-content: center;
+    flex-direction: column;  
+    text-align: center;
+    position: absolute;
+    top:120px;
+    right:20px;
+}
+.instituicao__content span {
+    color:#fff;
+}
+.box__p {
+    width:60%;
+    background-color: rgba(202, 202, 202, 0.6);
+    position: absolute;
+    top:180px;
+    left:300px;
+    padding:30px;    
+    width:60%;
+    border-radius:25px 0 25px 0;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.1);
+}
+.instituicao__content p {
+    color:#fff;
+    font-size: 1.5rem;        
+    width:100%;
+    line-height: 25px;
+}
+
+/* end style intituição */
+
+
+/* start style cliente */
+.clientes {
+    padding: 140px 13%;
+
+}
+.clientes__content {
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.clientes__box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap:1.2rem;
+    
+}
+.clientes__unit {
+    width:150px;
+    height:150px;
+    display: flex;
+    align-items: center;
+}
+.clientes__unit img {
+    width:100%;
+    height:auto;
+}
+
+
+
+/* end style cliente */
 
 
 
