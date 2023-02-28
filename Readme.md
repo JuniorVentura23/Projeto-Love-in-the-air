@@ -38,7 +38,7 @@ Confira o projeto Love in the air logo abaixo!!<br>
 
 Foi usada sessões com muita interação e deixando o mesmo com muito dinamismo e bem clean.
 
-Na parte do header: ao passar o mouse sobre o menu, muda-se a cor do mesmo.
+Na parte do HEADER: Foi criado um logotipo, pois o cliente não tinha; Ao passar o mouse sobre o menu, muda-se a cor do mesmo;
 <hr>
 O projeto possui um "HOME" interativo no qual temos um background e ali com um texto e botão ao lado esquerdo e ao direito uma imagem na qual é fica em movimento de subir e descer, já na parte inferior teremos três imagens que ao clicar, mudar a imagem principal com a sua respectiva imagem que foi clicada; Quando atualizada a página, ambos as partes tem uma interações de entreda: uma surge da esquerda e a outra de baixo.
 <hr>
