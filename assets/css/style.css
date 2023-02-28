@@ -254,7 +254,6 @@ section {
     cursor:pointer;
 }
 .unit-card:hover {
-    /* transform: scale(1.1); */
     background:linear-gradient(to bottom, #FFC9C9, #6fb5ff); 
 }
 .box-text {
@@ -549,7 +548,7 @@ footer {
 
 /* Início responsividade */
 
-@media(max-width:1024px) {
+@media (max-width:1024px) {
     html {
         font-size: 50%;       
     }
@@ -566,12 +565,11 @@ footer {
         background: #fff;
         position: fixed;
         top: 0;
-        left: 14px;
+        left: -55px;
         right: 30px;
         z-index: 1000;
         box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
-    }
-    
+    }     
     .home {    
         background-image:url('../images/projeto-casamento.jpg');
         background-repeat: no-repeat;
