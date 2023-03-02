@@ -190,11 +190,12 @@ section {
 
 /* -------end style section home------- */
 
+
+
 /* -------start style ambiente-------  */
 .ambientes {
-    width:100%;/* background-color: ; */
-    display: flex;
-    justify-content: ;
+    width:100%;
+    display: flex;    
 }
 .content-ambi  {
     width:100%; 
@@ -219,10 +220,6 @@ section {
     width:200px;
     height:120px;
 }
-
-
-
-
 .box-img img {
     width:100%;
     height:100%;
@@ -296,6 +293,7 @@ section {
 /* -------end style ambiente-------  */
 
 
+
 /* start style serviços */
 .servicos {
     background-color:#7d5c00 ; 
@@ -365,8 +363,6 @@ section {
     color:#fff;
     font-weight: 700;
 }
-
-
 /* end style serviços */
 
 
@@ -376,15 +372,13 @@ section {
     display:flex;
     justify-content: center;
     flex-direction: column;  
-    text-align: center;
-    
+    text-align: center;    
 }
 .depoimentos__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top:50px;
-    gap:1.2rem;  
-    
+    gap:1.2rem;      
 }
 .depoimentos__card {
     width:450px;
@@ -411,7 +405,6 @@ section {
 .depoimentos__consultor {
     margin-top:70px;
 }
-
 /* end style depoimentos */
 
 
@@ -420,22 +413,18 @@ section {
     position: relative;
     width:100vw;
     min-width:100vw;
-    height:600px;
-    
+    height:600px;    
 }
 .instituicao__boxVideo {
     position: absolute;
     width:100%;
     height:100%;
-    right:0px;
-    
+    right:0px;    
 }
 .instituicao__boxVideo video {
     width:100%;
     height:100%;
     object-fit: cover;
-    
-
 }
 .instituicao__content {
     width:100%; 
@@ -471,6 +460,7 @@ section {
 /* end style intituição */
 
 
+
 /* start style cliente */
 .clientes {
     padding: 140px 13%;
@@ -499,10 +489,8 @@ section {
     width:100%;
     height:auto;
 }
-
-
-
 /* end style cliente */
+
 
 
 /* start style footer */
@@ -519,10 +507,8 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
-
 .footer__boxSosial i {
     cursor:pointer;
     color:#fff;
@@ -539,7 +525,6 @@ footer {
     font-size: 1.2rem;
     color:#fff;
 }
-
 
 /* end style footer */
 
@@ -612,6 +597,60 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(192px, auto));
         gap: 7.2rem;
     }
+}
+@media(max-width:840px) {
+    .menuBx {
+        display: initial;
+    }    
+    
+    .navBar ul {
+        display:block;
+        position: absolute;
+        left:0;
+        top:99%;
+        padding:50px 90px;
+        background-color: var(--brown-medium);      
+        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+                               
+    }
+    .navBar ul.active {
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+         
+    }
+    .navBar li {
+        padding:10px 0;
+    }
+
+    .navBar a {
+        font-size: 4rem;
+        font-weight:500;     
+        border:none;
+        color:#ddaf75;
+        padding:0;
+                    
+    }
+    .navBar a:hover {       
+        color:var(--brown-dark) ;                    
+    } 
+    .content {
+        width:100vw;
+        display: grid;
+        grid-template-columns: repeat(350px, 1fr);    
+        justify-content: center;
+        align-items:center;        
+    }   
+    .text-bx {    
+        width:320px;         
+    }
+    .img-bx img {
+        height:280px;
+        animation:float 4s linear infinite;
+    }
+    /*
+    
+    }*/
+
 }
 @media(max-width:768px) {
     html {
@@ -745,65 +784,9 @@ footer {
         width:100%;
         height:auto;
     }
-    
-    
-
 }
 
-@media(max-width:840px) {
-    .menuBx {
-        display: initial;
-    }    
-    
-    .navBar ul {
-        display:block;
-        position: absolute;
-        left:0;
-        top:99%;
-        padding:50px 90px;
-        background-color: var(--brown-medium);      
-        clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
-        
-                               
-    }
-    .navBar ul.active {
-        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
-         
-    }
-    .navBar li {
-        padding:10px 0;
-    }
 
-    .navBar a {
-        font-size: 4rem;
-        font-weight:500;     
-        border:none;
-        color:#ddaf75;
-        padding:0;
-                    
-    }
-    .navBar a:hover {       
-        color:var(--brown-dark) ;                    
-    } 
-    .content {
-        width:100vw;
-        display: grid;
-        grid-template-columns: repeat(350px, 1fr);    
-        justify-content: center;
-        align-items:center;        
-    }   
-    .text-bx {    
-        width:320px;         
-    }
-    .img-bx img {
-        height:280px;
-        animation:float 4s linear infinite;
-    }
-    /*
-    
-    }*/
-
-}
 @media(max-width:740px) {
     .home {    
          width:100vw;
@@ -1000,9 +983,6 @@ footer {
     
    
 }
-
-    
-
 
 
 /* Final responsividade */
