@@ -4,6 +4,7 @@ Projeto desenvolvido para atender uma empresa de eventos para casamento.
 
 <br>
 Confira o projeto Love in the air logo abaixo!!<br>
+<img src="assets/images/Projeto Love in the air.jpg" width:100%>
 
 ### Veja o projeto Love in the air <a href="https://projeto-love-in-the-air.vercel.app//">Online</a>.
 
